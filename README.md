@@ -48,18 +48,9 @@ grep CONFIG_KSM /boot/config-*
 # DEBUG=1
 ```
 monitor status配置<br>
-/sys/kernel/mm/ksm
-```
-full_scans	Full scans run
-merge_across_nodes	Whether pages from different NUMA nodes can be merged
-pages_shared	Total pages shared
-pages_sharing	Pages currently shared
-pages_to_scan	Pages not scanned
-pages_unshared	Pages no longer shared
-pages_volatile	Number of volatile pages
-run	Whether the KSM process is running
-sleep_millisecs	Sleep milliseconds
-```
+/sys/kernel/mm/ksm <br>
+[参考说明](https://www.kernel.org/doc/Documentation/vm/ksm.txt)
+
 启用和停用
 ```
 systemctl enable ksmtuned
