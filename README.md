@@ -14,6 +14,7 @@ grep CONFIG_KSM /boot/config-*
 ### ksm 配置
 [参考资料](https://dannyda.com/2020/12/10/how-to-tune-ksm-kernel-samepage-merging-sharing-in-proxmox-ve-pve/?__cf_chl_captcha_tk__=47bd04826fff0e33459b5f5b26a858ab6a907b46-1612163667-0-Adx0-lZgAz-KxGJV9crqUmM97mg4zU-gno8XotgqV1FXEgBcPevvrBlKFHr8ylxrm-7bANfzuuTxcWKTf-LaNLJ2SvtOhiM-rHQulbeIDFT-4mGikMhWid_Eoo6xVf58lpzDJQLhv9mmDaA-qT5bqG1FgbWu9pa9s7UwD7Imniqfz_Dm3jC9nDlGqus81FohbtPD5WT2reZ2QSRWuS7b2acB7DeUqKp8S38oejjLuH4XZFpABcSzhHX9LuiV2F4fdVaGx961KhNgwss5s1TXkxllpnqyQKlRCSvwxpglPA1jl7IUL2HnSfRdhr65-_wkWHHDIUz7C1w7BFf9zPt3VXCAMvWj5em-kL5s4w-RYULiNYWPhqC87qdSkvMLsxO45eM_8bqRKYngtig0xzxdQmBXi1ISelivK3yzIIcNHJpSM8AzMjH3tjjIWrBPOcG9goq7r5xQiqMIIFpmcX636rl57dbnDafkno9I8Uv49BIeDTUp7OHzL2Y6XGKZcCjSkpf3S-Qypi_wieGEwsAoanJ91xoufCVUBiwLq20H5CXaXFE7CoG61r-Zbv4ixbrkVyP3fOpmBVaOb3qSLnga92YMF0eERdlyuu0FeViMVgLyd9pY6sT-zJUxkebOvrD13g) <br>
 /etc/ksmtuned.conf <br>
+[ksmtuned详解](ksmtuned.md) <br>
 修改后重启服务 service ksmstuned restart
 ```
 # Configuration file for ksmtuned.
