@@ -65,3 +65,8 @@ clang++ ksm.cpp -o ksm
 ./ksm 1
 可以top观察内存变化，也可以观察 /sys/kernel/mm/ksm/ 下面的状态
 ```
+#### 查看ksm status
+```
+echo Shared memory is $((`cat /sys/kernel/mm/ksm/pages_shared`*`getconf PAGE_SIZE`/1024/1024)) MB
+echo Saved memory is $((`cat /sys/kernel/mm/ksm/pages_sharing`*`getconf PAGE_SIZE`/1024/1024)) MB
+```
